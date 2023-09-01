@@ -1,13 +1,13 @@
 describe('My First Test', () => {
     it('verify title-positive', () => {
-        cy.visit("https://opensource-demo.orangehrmlive.com")
+        cy.visit("https://www.target.com/")
 
-        cy.title().should('eq', 'OrangeHRM')
+        cy.title().should('eq', 'Target : Expect More. Pay Less.')
     })
 
     it('verify title-negative', () => {
-        cy.visit("https://opensource-demo.orangehrmlive.com")
+        cy.visit("https://www.target.com/")
 
-        cy.title().should('eq', 'OrangeHRM123')
+        cy.title().should('eq', 'Target : Expect More. Pay Less.123')
     })
   })
